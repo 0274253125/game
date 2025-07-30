@@ -1,4 +1,4 @@
-Tilesheet information:
+sTilesheet information:
 
 Tile size                 •  24px × 24px
 Space between tiles       •  1px × 1px
