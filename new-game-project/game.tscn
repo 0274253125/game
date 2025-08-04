@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dvwhl1k6drd3g"]
+[gd_scene load_steps=6 format=3 uid="uid://dvwhl1k6drd3g"]
 
 [ext_resource type="PackedScene" uid="uid://c7qqywqyknmrw" path="res://character_body_2d.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://q5wujqpe5e1e" path="res://Assets/kenney_pixel-platformer/Tilemap/tilemap.png" id="2_e2o6t"]
@@ -240,6 +240,8 @@ texture = ExtResource("2_e2o6t")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_feb5d")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e2o6t"]
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -257,3 +259,5 @@ position = Vector2(-1, 0)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_e2o6t")
