@@ -4,8 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://q5wujqpe5e1e" path="res://Assets/kenney_pixel-platformer/Tilemap/tilemap.png" id="2_e2o6t"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e2o6t"]
-radius = 4.0
-height = 8.0
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e2o6t"]
 
@@ -319,12 +317,11 @@ position = Vector2(0, -4)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-1, 0)
-zoom = Vector2(3, 3)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(57, -152)
+position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_e2o6t")
 
 [node name="Layer0" type="TileMapLayer" parent="."]
